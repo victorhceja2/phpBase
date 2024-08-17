@@ -11,9 +11,11 @@ $password = "innovacionMovil2024*";
 $dbname = "bd1";
 
 try {
+  echo "1";
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  echo "2";
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+  echo "3";
   // Consulta para obtener todas las películas
   $stmt = $conn->prepare("SELECT * FROM peliculas");
   $stmt->execute();
