@@ -7,10 +7,12 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: innovacionMovil2024*
+      MYSQL_ROOT_PASSWORD: .66
       MYSQL_DATABASE: bd1
   php:
     build: .
+    ports:
+      - '8000:80'
     volumes:
       - .:/var/www/html
     depends_on:
