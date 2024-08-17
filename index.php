@@ -26,6 +26,8 @@ try {
 <body>
   <h1>Mis Películas</h1>
 
+  prints_r($peliculas)
+  
   <table>
     <thead>
       <tr>
