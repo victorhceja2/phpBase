@@ -10,12 +10,12 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Crear la base de datos
-    $sql = "CREATE DATABASE db1";
+    $sql = "CREATE DATABASE bd1";
     $conn->exec($sql);
     echo "Base de datos creada exitosamente<br>";
 
     // Usar la base de datos creada
-    $conn->exec("USE db1");
+    $conn->exec("USE bd1");
 
     // Crear la tabla de películas
     $sql = "CREATE TABLE peliculas (

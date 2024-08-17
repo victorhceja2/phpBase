@@ -1,8 +1,8 @@
 -- Crear la base de datos
-CREATE DATABASE db1;
+CREATE DATABASE bd1;
 
 -- Usar la base de datos
-USE db1;
+USE bd1;
 
 -- Crear la tabla de películas
 CREATE TABLE peliculas (
