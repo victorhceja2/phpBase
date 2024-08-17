@@ -1,5 +1,10 @@
 <?php
-// Conexión a la base de datos (ajusta los datos)
+
+ ini_set('display_errors', 1);
+ ini_set('display_startup_errors', 1);
+ error_reporting(E_ALL);
+ //Conexión a la base de datos (ajusta los datos)
+
 $servername = "localhost";
 $username = "root";
 $password = "innovacionMovil2024*";
@@ -25,8 +30,7 @@ try {
 </head>
 <body>
   <h1>Mis Películas</h1>
-
-  prints_r($peliculas)
+ 
   
   <table>
     <thead>
