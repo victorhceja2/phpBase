@@ -1,7 +1,7 @@
-FROM php:7.4-apache
+FROM php:8.1-apache
 
 # Instalar extensiones PHP según sea necesario
-COPY php.ini /usr/local/etc/php/php.ini
+#COPY php.ini /usr/local/etc/php/php.ini
 #RUN docker-php-ext-install mysqli pdo_mysql
 # Instalar extensiones de PHP necesarias
 RUN docker-php-ext-install pdo pdo_mysql
