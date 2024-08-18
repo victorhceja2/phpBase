@@ -3,15 +3,14 @@ FROM php:8.1-fpm-apache
 # Instalar extensiones PHP según sea necesario
 COPY php.ini /usr/local/etc/php/php.ini
 #RUN docker-php-ext-install mysqli pdo_mysql
-RUN a2enmod rewrite
-RUN service apache2 restart
-
+# Instalar extensiones de PHP necesarias
 RUN docker-php-ext-install pdo pdo_mysql
 
-RUN pecl install xdebug && docker-php-ext-enable xdebug
+# Copiar el código de la aplicación al contenedor
+COPY . /var/www/html/
 
-# Copiar tu código PHP
-COPY . /var/www/html
+# Exponer el puerto 80
+EXPOSE 8000
 
 
 #FROM php:8.0-apache
