@@ -1,4 +1,4 @@
-FROM php:8.1-fpm-apache
+FROM php:7.4-apache
 
 # Instalar extensiones PHP según sea necesario
 COPY php.ini /usr/local/etc/php/php.ini
